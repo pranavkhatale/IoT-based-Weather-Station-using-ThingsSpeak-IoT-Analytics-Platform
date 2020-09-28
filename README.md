@@ -1,39 +1,70 @@
-# IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics
-## Monitor the Temperature and Humidity on any device and also upload that data to Thingspeak Cloud.
-![Project Image2](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/Project%20Image2.jpg?raw=true)
-![Project Image2](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/Project%20Image1.jpg?raw=true)
-### Block Diagram:
+# **_Welcome to the IoT-based-Weather-Station-using-ThingSpeak-IoT-Analytics-Platform wiki!_**
+### _Monitor the Temperature and Humidity on any internet-connected device have Web Browser and also upload that data to ThingSpeak IoT Analytics Platform._
+
+![Project Image1](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/Project%20Image%203.jpg?raw=true)
+
+#### **Block Diagram:**
 ![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics/blob/master/Block%20Diagram.jpg?raw=true)
 
-### Component & Supplies:
-1) NodeMCU ESP8266-12E [1 Unit]
-2) DHT11 Sensor [1 Unit]
-3) Jumper Wires (Male-to-Male) [10 Units]
-4) Breadboard [1 Unit]
+### _Required components & tools:_
+| **_Hardware_** | **_Quantity_** |
+|---| :---: |
+| [NodeMCU ESP8266-12E Board](https://en.wikipedia.org/wiki/NodeMCU) | 1 |
+| DHT11 Sensor Module | 1 |
+| Jumper Wires (Male-to-Female) | 3 |
+| Breadboard | 1 |
+| USB Cable | 1 |
 
-### Prerequisites:
-Arduino IDE with ESP8266 add-on installed.
+| **_Software & Online tools_** |
+|---|
+| [Arduino IDE](https://www.arduino.cc/en/Main/Software) |
+| [Web Browser](https://en.wikipedia.org/wiki/Web_browser) |
+| [Thingspeak Account](https://thingspeak.com/) |
 
-### Circuit description and working:
-Circuit diagram for monitoring humidity and temperature is shown in figure below. It is built around NodeMCU ESP8266, DHT11 Sensor and few jumper wires on Solderless breadboard.
+### _Prerequisites:_
+* Arduino IDE with ESP8266 add-on installed.
 
-### Schematic:
+### _Circuit description and working:_
+The circuit diagram for monitoring humidity and temperature is shown in the figure below. It is built around NodeMCU ESP8266-12E board, DHT11 Sensor, and few jumper wires on the solderless breadboard.
 
-The DHT11 sensor senses humidity and temperature, and sends the information to digital pin D2 of NodeMCU ESP8266 board, as shown in the above figure. From NodeMCU, humidity and temperature values are uploaded to the Cloud at regular intervals of time through NodeMCU ESP8266 Wi-Fi module. From the Cloud, humidity and temperature values can be seen graphically on ThingSpeak platform from anywhere in the world.
+### _Schematic:_
+![Fritzing Schematic Diagram](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/Fritzing%20Schematic.jpg?raw=true)
 
-### Construction and testing:
-ThingSpeak is an open source data platform but you need to register to use it. After registering, login to your account and create a new channel with humidity as one field and temperature as another, as shown in figure below. Once a new channel is created, it will generate two API keys, namely, write API key and read API key. Replace the line given below in the program with your write API key:
+The DHT11 sensor senses humidity and temperature, and sends the information to digital pin D2 of NodeMCU ESP8266-12E board, as shown in the above figure. From NodeMCU, humidity and temperature values are uploaded to the Cloud at regular intervals of time through the NodeMCU ESP8266 Wi-Fi module. From the Cloud, humidity and temperature values can be seen graphically on the ThingSpeak platform from anywhere in the world.
 
-_String apiKey = “NTIM1RXET6YVUVWF“;_
+### _Construction and testing:_
 
-Next, substitute Host_Name and Password with your Wi-Fi name and Wi-Fi password in the two lines given below in the program (code.ino):
+![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/1.png?raw=true)
 
-_String Host_Name = “DLinkWiFi”;
-String Password = “Pass@123”;_
+Go to [ThingSpeak](https://thingspeak.com/) website on a Web Browser.
+Thingspeak is an IoT analytics platform but you need to register to use it. After registering, login to your account and **Create a new channel** with **Name**, add **Description**, Temperature as **Field1**, and Humidity as **Field2** (tick the square boxes shown in front of it), you can add **Elevation**, **Latitude** & **Longitude** of the place where you are installing this weather station (tick **Show Channel Location**) as shown in the figure below. Finally don't forget to tick the **Show Status** square box & click **Save Channel**.
 
-The program should be verified with your Wi-Fi setup. It uses DHT library. If DHT library is not present in your Arduino folder, download it from https://github.com/adafruit/DHT-sensor-library. To import DHT library in Arduino IDE, select Sketch >>> Import library >>> Add library >>> Select the library that you have downloaded.
-Compile the sketch/program and upload it to Arduino MCU through Arduino IDE. Ensure that Wi-Fi modem and the Internet connection in your PC/smartphone are working properly. Once sketch uploading is done, it will upload humidity and temperature values on ThingSpeak platform and you will be able to see it graphically in Private view window, as shown in figure below. If you want to change channel or field name, you can change it from Channel Settings (shown in the figure below).
+![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/2.png?raw=true)
+![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/3.png?raw=true)
 
-### Other applications : 
+Once a new channel is created, go to **API Keys** tab, ThingSpeak will generate two API keys, namely, write an API key and read the API key. Replace the line given below in the program with your write API key:
 
-Along with temperature and humidity sensor, other sensors like gas, voltage, current and energy can be used based on the requirement. Moreover, it is also possible to take further actions by controlling the actuators from the Internet once the sensor values are going above/below predetermined values.
+`String apiKey = “NTIM1RXET6YVUVWF“;`
+
+Next, substitute _const char *ssid_ and _const char *pass_ with your Wi-Fi name and Wi-Fi password in the two lines given below in the program (code_Weather_Station.ino):
+
+`const char *ssid =  "DLinkWiFi";`
+
+`const char *pass =  "Pass@123";`
+
+The program should be verified with your Wi-Fi setup. It uses the DHT library. If the DHT library is not present in your Arduino IDE go to the **Tools** tab, select **Manage Libraries...**, a **Library Manager** window will pop-up, type **DHT sensor library** in the search box select library provided by Adafruit & click **Install**. 
+
+![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/DHT%20Sensor%20Library%20Installation.png?raw=true)
+
+Connect the board with a USB cable to the computer. Compile the sketch/program and upload it to NodeMCU Board through Arduino IDE (don't forget to select **Board** & **Port** before uploading the sketch). Ensure that the Wi-Fi modem and the Internet connection in your PC/smartphone are working properly. Once sketch uploading is done, it will upload humidity and temperature values on the ThingSpeak platform and you will be able to see it graphically in the Private view window, as shown in the figure below. If you want to change the channel or field name, you can change it from Channel Settings (shown in the figure below).
+
+![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/4.png?raw=true)
+![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/5.png?raw=true)
+
+Finally, your project looks like this image shown below in Web Browser,
+
+![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/6.png?raw=true)
+
+[Click here to view my ThingSpeak Channel.](https://thingspeak.com/channels/952128)
+
+[Click here to view my Project Website](https://sites.google.com/view/thingspeakiotweatherstation/home) where I have integrated the whole project to access it with a single click.
