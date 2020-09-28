@@ -40,6 +40,7 @@ Go to [ThingSpeak](https://thingspeak.com/) website on a Web Browser.
 Thingspeak is an IoT analytics platform but you need to register to use it. After registering, login to your account and **Create a new channel** with **Name**, add **Description**, Temperature as **Field1**, and Humidity as **Field2** (tick the square boxes shown in front of it), you can add **Elevation**, **Latitude** & **Longitude** of the place where you are installing this weather station (tick **Show Channel Location**) as shown in the figure below. Finally don't forget to tick the **Show Status** square box & click **Save Channel**.
 
 ![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/2.png?raw=true)
+
 ![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/3.png?raw=true)
 
 Once a new channel is created, go to **API Keys** tab, ThingSpeak will generate two API keys, namely, write an API key and read the API key. Replace the line given below in the program with your write API key:
