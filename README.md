@@ -1,9 +1,10 @@
 # IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics
 ## Monitor the Temperature and Humidity on any device and also upload that data to Thingspeak Cloud.
 
+### Block Diagram:
 ![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics/blob/master/Block%20Diagram.jpg?raw=true)
 
-### COMPONENTS AND SUPPLIES:
+### Component & Supplies:
 1) NodeMCU ESP8266-12E [1 Unit]
 2) DHT11 Sensor [1 Unit]
 3) Jumper Wires (Male-to-Male) [10 Units]
@@ -12,7 +13,7 @@
 ### Prerequisites:
 Arduino IDE with ESP8266 add-on installed.
 
-### Circuit and working:
+### Circuit description and working:
 Circuit diagram for monitoring humidity and temperature is shown in figure below. It is built around NodeMCU ESP8266, DHT11 Sensor and few jumper wires on Solderless breadboard.
 
 ### Schematic:
