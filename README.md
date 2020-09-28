@@ -16,6 +16,7 @@ Circuit diagram for monitoring humidity and temperature is shown in figure below
 ### Schematic:
 
 The DHT11 sensor senses humidity and temperature, and sends the information to digital D2 of NodeMCU ESP8266 board, as shown in above figure. From NodeMCU, humidity and temperature values are uploaded to the Cloud at regular intervals of time through NodeMCU ESP8266 Wi-Fi module. From the Cloud, humidity and temperature values can be seen graphically on ThingSpeak platform from anywhere in the world.
+![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics/blob/master/Block%20Diagram.jpg?raw=true)
 
 ### Construction and testing:
 ThingSpeak is an open source data platform but you need to register to use it. After registering, login to your account and create a new channel with humidity as one field and temperature as another, as shown in figure below. Once a new channel is created, it will generate two API keys, namely, write API key and read API key. Replace the line given below in the program with your write API key:
