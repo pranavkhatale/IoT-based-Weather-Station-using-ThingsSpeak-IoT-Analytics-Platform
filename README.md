@@ -29,7 +29,6 @@ The circuit diagram for monitoring humidity and temperature is shown in the figu
 
 ### _Schematic:_
 ![Fritzing Schematic Diagram](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/Fritzing%20Schematic.jpg?raw=true)
-
 The DHT11 sensor senses humidity and temperature, and sends the information to digital pin D2 of NodeMCU ESP8266-12E board, as shown in the above figure. From NodeMCU, humidity and temperature values are uploaded to the Cloud at regular intervals of time through the NodeMCU ESP8266 Wi-Fi module. From the Cloud, humidity and temperature values can be seen graphically on the ThingSpeak platform from anywhere in the world.
 
 ### _Construction and testing:_
@@ -60,6 +59,7 @@ The program should be verified with your Wi-Fi setup. It uses the DHT library. I
 Connect the board with a USB cable to the computer. Compile the sketch/program and upload it to NodeMCU Board through Arduino IDE (don't forget to select **Board** & **Port** before uploading the sketch). Ensure that the Wi-Fi modem and the Internet connection in your PC/smartphone are working properly. Once sketch uploading is done, it will upload humidity and temperature values on the ThingSpeak platform and you will be able to see it graphically in the Private view window, as shown in the figure below. If you want to change the channel or field name, you can change it from Channel Settings (shown in the figure below).
 
 ![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/4.png?raw=true)
+
 ![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/5.png?raw=true)
 
 Finally, your project looks like this image shown below in Web Browser,
