@@ -73,3 +73,5 @@ Finally, your project looks like this image shown below in the Web Browser,
 [Click here to view my Project Website](https://sites.google.com/view/thingspeakiotweatherstation/home) where I have integrated the whole project to access it with a single click.
 
 ![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/Project%20Image2.jpg?raw=true)
+
+### _**Built with  ❤  by Pranav Khatale**_
