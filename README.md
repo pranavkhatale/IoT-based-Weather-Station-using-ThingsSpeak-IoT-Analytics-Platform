@@ -1,5 +1,7 @@
 # **_Welcome to the IoT-based-Weather-Station-using-ThingSpeak-IoT-Analytics-Platform wiki!_**
-### _Monitor the Temperature and Humidity on any internet-connected device have Web Browser and also upload that data to ThingSpeak IoT Analytics Platform._
+### _Monitor the Temperature and Humidity on any internet-connected device have a Web Browser and also upload that data to ThingSpeak IoT Analytics Platform._
+
+![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/Project%20Image1.jpg?raw=true)
 
 ![Project Image1](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/Project%20Image%203.jpg?raw=true)
 
@@ -62,14 +64,12 @@ Connect the board with a USB cable to the computer. Compile the sketch/program a
 
 ![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/5.png?raw=true)
 
-Finally, your project looks like this image shown below in Web Browser,
+Finally, your project looks like this image shown below in the Web Browser,
 
 ![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/6.png?raw=true)
 
 [Click here to view my ThingSpeak Channel.](https://thingspeak.com/channels/952128)
 
 [Click here to view my Project Website](https://sites.google.com/view/thingspeakiotweatherstation/home) where I have integrated the whole project to access it with a single click.
-
-![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/Project%20Image1.jpg?raw=true)
 
 ![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/Project%20Image2.jpg?raw=true)
