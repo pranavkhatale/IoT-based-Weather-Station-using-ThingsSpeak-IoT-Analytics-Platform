@@ -1,6 +1,7 @@
 # IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics
 ## Monitor the Temperature and Humidity on any device and also upload that data to Thingspeak Cloud.
-
+![Project Image2](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/Project%20Image2.jpg?raw=true)
+![Project Image2](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/Project%20Image1.jpg?raw=true)
 ### Block Diagram:
 ![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics/blob/master/Block%20Diagram.jpg?raw=true)
 
