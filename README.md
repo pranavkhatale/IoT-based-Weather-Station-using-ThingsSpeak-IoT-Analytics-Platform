@@ -54,9 +54,7 @@ Next, substitute _const char *ssid_ and _const char *pass_ with your Wi-Fi name 
 
 `const char *pass =  "Pass@123";`
 
-The program should be verified with your Wi-Fi setup. It uses the dht library. If the dht library is not present in your Arduino IDE. Go to your PC's **File Explorer > Documents > Arduino > libraries**. Create a new folder named **dht** in lower case only, ![Download the dht.h & dht.cpp files](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-ThingsSpeak-IoT-Analytics-Platform/tree/master/dht) & paste both the files in that dht folder. Close the Arduino IDE. 
-
-![](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-Thingspeak-IoT-Analytics-Platform/blob/master/DHT%20Sensor%20Library%20Installation.png?raw=true)
+The program should be verified with your Wi-Fi setup. It uses the dht library. If the dht library is not present in your Arduino IDE. Go to your PC's **File Explorer > Documents > Arduino > libraries**. Create a new folder named **dht** in lower case only, [Download the dht.h & dht.cpp files](https://github.com/pranavkhatale/IoT-based-Weather-Station-using-ThingsSpeak-IoT-Analytics-Platform/tree/master/dht) & paste both the files in that dht folder. Close the Arduino IDE. 
 
 Open Arduino IDE. Connect the board with a USB cable to the computer. Compile the sketch/program and upload it to NodeMCU Board through Arduino IDE (don't forget to select **Board** & **Port** before uploading the sketch). Ensure that the Wi-Fi modem and the Internet connection in your PC/smartphone are working properly. Once sketch uploading is done, it will upload humidity and temperature values on the ThingSpeak platform and you will be able to see it graphically in the Private view window, as shown in the figure below. If you want to change the channel or field name, you can change it from Channel Settings (shown in the figure below).
 
